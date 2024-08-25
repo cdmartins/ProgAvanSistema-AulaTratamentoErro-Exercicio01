@@ -32,7 +32,8 @@ namespace ProgAvanSistema_TratamentoErro_Aula04_Exercicios
                     if (soma > 100)
                     {
                         contador--;
-                        throw new ExcecaoAcimaDeCem(soma -= input);
+                        soma -= input;
+                        throw new ExcecaoAcimaDeCem();
                     }
 
                     Console.WriteLine($"Soma: {soma}");
@@ -44,7 +45,7 @@ namespace ProgAvanSistema_TratamentoErro_Aula04_Exercicios
             }
 
             double media = soma / contador;
-            Console.WriteLine($"Soma total antes de execer 100: {soma}");
+            Console.WriteLine($"\nSoma total antes de exeder 100: {soma}");
             Console.WriteLine($"Quantidade de números somados: {contador}");
             Console.WriteLine($"Média dos números: {media:F2}");
 

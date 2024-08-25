@@ -8,6 +8,6 @@ namespace ProgAvanSistema_TratamentoErro_Aula04_Exercicios
 {
     internal class ExcecaoAcimaDeCem : Exception
     {
-        public ExcecaoAcimaDeCem (double soma) : base($"A soma ultrapassou 100") { }
+        public ExcecaoAcimaDeCem () : base($"A soma ultrapassou 100") { }
     }
 }
